@@ -1,0 +1,12 @@
+# build artifacts
+dist/
+build/
+
+# python
+__pycache__/
+*.pyc
+
+ms-playwright/
+
+# ide
+.vscode/

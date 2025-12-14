@@ -10,3 +10,9 @@ ms-playwright/
 
 # ide
 .vscode/
+
+
+dist/
+build/
+*.exe
+*.dlldist/

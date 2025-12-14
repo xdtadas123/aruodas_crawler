@@ -2,7 +2,9 @@
 
 ## Ką daro programa
 
-Iš nurodyto **m.aruodas.lt** paieškos URL su jau pridėtais dominančiais filtrais randą geriauius nekilnojamo turto pasiūlymus kvadratinio metro kainos toje gatvėje atžvilgiu.Pasirinktą kiekį top kandidatų įrašo į **deals_top3.txt**. Taip pat egzistuoja ir **aruodas_scrapper.py**, kuris gali pvz. užpildyti .csv visų Vilniaus butų informacija. Tokiu būdu yra prasiekiamas ir įrankis, kuriuo galima užtikrinti tiksliausius duomenis bent iš aruodas pusės. Žinoma, bendroje idėjoje egzistuoja labai labai daug tech. spragų ir logikos klaidų. 
+Iš nurodyto **m.aruodas.lt** paieškos URL su jau pridėtais dominančiais filtrais randą geriauius nekilnojamo turto pasiūlymus kvadratinio metro kainos toje gatvėje atžvilgiu.Pasirinktą kiekį top kandidatų įrašo į **deals_top3.txt**. Taip pat egzistuoja ir **aruodas_scrapper.py**, kuris gali pvz. užpildyti .csv visų Vilniaus butų informacija. Tokiu būdu yra prasiekiamas ir įrankis, kuriuo galima užtikrinti tiksliausius duomenis bent iš aruodas pusės. Žinoma, bendroje idėjoje egzistuoja labai labai daug tech. spragų ir logikos klaidų.
+
+---
 
 ![Example](example.gif)
 
@@ -60,7 +62,8 @@ python aruodas_search.py "<URL>" --top 10 --analyzer aruodas_analyze.exe --marke
 
 ---
 
-## Kaip veikia ☝️🤓 (koncentruotai)
+## Kaip veikia ☝️🤓
+
 - **aruodas_app.py**: paima `URL` ir `TOP N`, suformuoja argumentus ir kviečia `aruodas_search.main(...)`.
 - **aruodas_search.py**:
   - per **Playwright** atidaro vieną naršyklės langą ir greitai pereina per „Kitas“ puslapius;

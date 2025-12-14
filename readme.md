@@ -1,6 +1,6 @@
-# ARUODAS_CRAWLER
+# ARUODAS CRAWLER
 
-## Ką daro programa
+## Ką daro?
 
 Iš nurodyto **m.aruodas.lt** paieškos URL su jau pridėtais dominančiais filtrais randą geriauius nekilnojamo turto pasiūlymus kvadratinio metro kainos toje gatvėje atžvilgiu.Pasirinktą kiekį top kandidatų įrašo į **deals_top3.txt**. Taip pat egzistuoja ir **aruodas_scrapper.py**, kuris gali pvz. užpildyti .csv visų Vilniaus butų informacija. Tokiu būdu yra prasiekiamas ir įrankis, kuriuo galima užtikrinti tiksliausius duomenis bent iš aruodas pusės. Žinoma, bendroje idėjoje egzistuoja labai labai daug tech. spragų ir logikos klaidų.
 
@@ -10,7 +10,7 @@ Iš nurodyto **m.aruodas.lt** paieškos URL su jau pridėtais dominančiais filt
 
 ---
 
-## Kaip gauti .exe (Windows)
+## Kaip gauti .exe
 1) Įdiegti priklausomybes ir Playwright Chromium:
 ```powershell
 python -m pip install -r requirements.txt

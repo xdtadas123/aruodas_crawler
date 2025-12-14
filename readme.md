@@ -4,8 +4,6 @@
 
 Iš nurodyto **m.aruodas.lt** paieškos URL su jau pridėtais dominančiais filtrais randa geriausius nekilnojamo turto pasiūlymus kvadratinio metro kainos toje gatvėje atžvilgiu. Pasirinktą kiekį top kandidatų įrašo į **deals_top3.txt**. Taip pat egzistuoja ir **aruodas_scrapper.py**, kuris gali pvz. užpildyti .csv visų Vilniaus butų informacija. Tokiu būdu yra prasiekiamas ir įrankis, kuriuo galima užtikrinti tiksliausius duomenis bent iš aruodas pusės.
 
-❗Dabar su .exe yra šiek tiek scuffed, nes jį reikia paleisti iš \aruodas\dist\aruodas_app\v0.1.exe ir rezultatai atsiras \aruodas\dist\aruodas_app\_internal\deals_top3.txt
-
 ---
 
 ![Example](example.gif)

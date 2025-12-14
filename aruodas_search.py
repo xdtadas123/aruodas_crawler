@@ -88,6 +88,7 @@ def ensure_analyzer_path(p: str) -> str:
     p = (p or "").strip()
     if not p:
         return p
+
     if os.path.isabs(p) and os.path.exists(p):
         return p
 
@@ -95,6 +96,18 @@ def ensure_analyzer_path(p: str) -> str:
     cand = os.path.join(base, p)
     if os.path.exists(cand):
         return cand
+
+    if os.name == "nt" and not p.lower().endswith(".exe"):
+        cand_exe = os.path.join(base, p + ".exe")
+        if os.path.exists(cand_exe):
+            return cand_exe
+
+    return cand
+
+def script_dir() -> str:
+    if getattr(sys, "frozen", False):
+        return os.path.dirname(sys.executable)
+    return os.path.dirname(os.path.abspath(__file__))
 
     if os.name == "nt" and not p.lower().endswith(".exe"):
         cand_exe = os.path.join(base, p + ".exe")
